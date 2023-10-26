@@ -1,0 +1,214 @@
+.bg-color {
+    background-color: #00AEEF;
+}
+
+.btn-color {
+    background-color: #A3E2F9;
+}
+
+.pxx {
+    padding: 100px;
+}
+
+.fsz {
+    font-size: 20px;
+}
+
+.custom-rounded-container {
+    background-color: #008CCF;
+    border-radius: 60px 60px 0 0;
+    padding: 20px;
+}
+
+.color {
+    color: #05B1F0;
+}
+
+.bgimg {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/621d132ccfbe47162ece3f00/ba3a6cd9-1897-4062-a694-33ac38084bc5/laptop_wCircle_v2-min.png");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+nav:not(.active) {
+    display: none;
+}
+
+nav.active {
+    display: block;
+}
+
+
+@media (min-width: 1200px) {
+    .btn-color {
+        background-color: #A3E2F9;
+    }
+
+    .pxx {
+        padding: 100px;
+    }
+
+    .mr {
+        margin-right: -90px;
+    }
+
+    .fsz {
+        font-size: 70px;
+    }
+    .fs {
+        font-size: 20px;
+    }
+
+    .dflex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mr {
+        margin-right: 120px;
+    }
+
+    .ml {
+        margin-left: 200px;
+    }
+
+    .custom-mr {
+
+        margin-right: 250px;
+    }
+
+    .custom-width {
+        width: 30%;
+    }
+
+    .width {
+        width: 500px;
+
+    }
+
+    .position {
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+
+    .background-image {
+        background-image: url('https://images.squarespace-cdn.com/content/v1/621d132ccfbe47162ece3f00/b2a2ccdb-4c1a-4010-8a2e-c001d78da870/desktop_wCircle.png');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 500px;
+    }
+
+    .web-none {
+        display: none;
+    }
+
+    .p2 {
+        padding: 4px;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+    .fsz {
+        font-size: 25px;
+    }
+
+    .size {
+        width: 150px;
+    }
+
+    .pxx {
+        padding: 25px;
+    }
+
+    .whl {
+        width: 150px;
+        height: 150px;
+    }
+
+    .mr {
+        margin-right: -90px;
+    }
+}
+
+@media (max-width: 768px) and (min-width:576px) {
+
+    .size {
+        width: 150px;
+    }
+
+    .pxx {
+        padding: 30px;
+    }
+
+    .whl {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .width-mob{
+        width: 230px;
+    }
+
+
+    .pxx {
+        padding: 30px;
+    }
+
+    .whl {
+        width: 150px;
+        height: 150px;
+    }
+
+    .size {
+        width: 150px;
+    }
+
+    .m-top {
+        margin-top: 55px;
+    }
+
+    .m-t {
+        margin-top: 15px;
+    }
+
+    .w {
+        width: 100%;
+    }
+
+    .mt {
+        margin-top: 20px;
+    }
+
+    .background-image-mob {
+        background-image: url('https://images.squarespace-cdn.com/content/v1/621d132ccfbe47162ece3f00/49e6aa62-8d85-44d0-8b3a-d59324e8dfe9/Mobile_FAQ_Shape.png');
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 750px;
+    }
+
+    .backg-image-mob {
+        background-image: url('https://images.squarespace-cdn.com/content/v1/621d132ccfbe47162ece3f00/75c33e12-345f-4bb7-b6b7-2e20e3994cf3/Mobile_FAQ_Desktop.png');
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 400px;
+    }
+
+    .position {
+        margin-top: 100px;
+    }
+
+    .fs {
+        font-size: 15px;
+    }
+    .m-none{
+        display: none;
+    }
+}
