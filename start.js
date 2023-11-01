@@ -1,37 +1,31 @@
 $(document).ready(function () {
-    $('#collapseContent').on('shown.bs.collapse', function () {
-        $('#collapseIcon').text('-');
-    });
-
-    $('#collapseContent').on('hidden.bs.collapse', function () {
-        $('#collapseIcon').text('+');
-    });
-
-    $('#collapseContent0').on('shown.bs.collapse', function () {
-        $('#collapseIcon0').text('-');
-    });
-
-    $('#collapseContent0').on('hidden.bs.collapse', function () {
-        $('#collapseIcon0').text('+');
-    });
-
-    $('#collapseContent1').on('shown.bs.collapse', function () {
-        $('#collapseIcon1').text('-');
-    });
-
-    $('#collapseContent1').on('hidden.bs.collapse', function () {
-        $('#collapseIcon1').text('+');
-    });
-
-    $('#collapseContent2').on('shown.bs.collapse', function () {
-        $('#collapseIcon2').text('-');
-    });
-
-    $('#collapseContent2').on('hidden.bs.collapse', function () {
-        $('#collapseIcon2').text('+');
-    });
-    
+    for (let i = 0; i < 9; i++) {
+        const btn = document.getElementById(`btn${i}`);
+        const content = document.getElementById(`collapseContent${i}`);
+        const icon = document.getElementById(`collapseIcon${i}`);
+        btn.addEventListener('click', () => {
+            for (let j = 0; j < 9; j++) {
+                const otherContent = document.getElementById(`collapseContent${j}`);
+                const otherIcon = document.getElementById(`collapseIcon${j}`);
+                if (i === j) {
+                    if (content.style.display === 'none') {
+                        content.style.display = 'block';
+                        icon.textContent = '-';
+                    } else {
+                        content.style.display = 'none';
+                        icon.textContent = '+';
+                    }
+                } else {
+                    otherContent.style.display = 'none';
+                    otherIcon.textContent = '+';
+                }
+            }
+        });
+    }
 });
+
+
+
 
 
 
