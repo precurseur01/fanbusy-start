@@ -1,10 +1,10 @@
 $(document).ready(function () {
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 12; i++) {
         const btn = document.getElementById(`btn${i}`);
         const content = document.getElementById(`collapseContent${i}`);
         const icon = document.getElementById(`collapseIcon${i}`);
         btn.addEventListener('click', () => {
-            for (let j = 0; j < 9; j++) {
+            for (let j = 0; j < 12; j++) {
                 const otherContent = document.getElementById(`collapseContent${j}`);
                 const otherIcon = document.getElementById(`collapseIcon${j}`);
                 if (i === j) {

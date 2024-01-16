@@ -2,6 +2,10 @@
     background-color: #00AEEF;
 }
 
+.color {
+    color: #00AEEF;
+}
+
 .btn-color {
     background-color: #A3E2F9;
 }
@@ -21,7 +25,7 @@
 }
 
 .bgimg {
-    background-image: url("https://images.squarespace-cdn.com/content/v1/621d132ccfbe47162ece3f00/ba3a6cd9-1897-4062-a694-33ac38084bc5/laptop_wCircle_v2-min.png");
+    /* background-image: url("https://images.squarespace-cdn.com/content/v1/621d132ccfbe47162ece3f00/ba3a6cd9-1897-4062-a694-33ac38084bc5/laptop_wCircle_v2-min.png");*/
     width: 100%;
     height: 375px;
     background-size: cover;
@@ -37,6 +41,10 @@
 @media (min-width: 1200px) {
     .btn-color {
         background-color: #A3E2F9;
+    }
+
+    .size {
+        height: 90px;
     }
 
     .pxx {
@@ -88,7 +96,8 @@
     }
 
     .background-image {
-        background-image: url('https://images.squarespace-cdn.com/content/v1/621d132ccfbe47162ece3f00/b2a2ccdb-4c1a-4010-8a2e-c001d78da870/desktop_wCircle.png');
+        background-color: #0d80b6;
+        /* background-image: url('https://images.squarespace-cdn.com/content/v1/621d132ccfbe47162ece3f00/b2a2ccdb-4c1a-4010-8a2e-c001d78da870/desktop_wCircle.png');*/
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -116,7 +125,7 @@
     }
 
     .size {
-        width: 150px;
+        height: 90px;
     }
 
     .pxx {
@@ -136,7 +145,7 @@
 @media (max-width: 768px) and (min-width:576px) {
 
     .size {
-        width: 150px;
+        height: 50px;
     }
 
     .pxx {
@@ -173,7 +182,7 @@
     }
 
     .size {
-        width: 150px;
+        height: 50px;
     }
 
     .m-top {
@@ -201,7 +210,7 @@
     }
 
     .backg-image-mob {
-        background-image: url('https://images.squarespace-cdn.com/content/v1/621d132ccfbe47162ece3f00/75c33e12-345f-4bb7-b6b7-2e20e3994cf3/Mobile_FAQ_Desktop.png');
+        /* background-image: url('https://images.squarespace-cdn.com/content/v1/621d132ccfbe47162ece3f00/75c33e12-345f-4bb7-b6b7-2e20e3994cf3/Mobile_FAQ_Desktop.png');*/
         background-size: cover;
         background-position: center;
         width: 100vw;
