@@ -2,6 +2,13 @@
     background-color: #00AEEF;
 }
 
+.bgSection {
+    background-image: url('image/bg.section.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .color {
     color: #00AEEF;
 }
@@ -11,7 +18,7 @@
 }
 
 .pxx {
-    padding: 100px;
+    padding: 75px;
 }
 
 .custom-rounded-container {
@@ -39,6 +46,21 @@
 
 
 @media (min-width: 1200px) {
+
+    .mt-web {
+        margin-top: 60px;
+
+    }
+
+
+    .w-70 {
+        width: 90%;
+    }
+
+    .w-40 {
+        width: 40%;
+    }
+
     .btn-color {
         background-color: #A3E2F9;
     }
@@ -48,7 +70,16 @@
     }
 
     .pxx {
-        padding: 100px;
+        padding: 75px;
+    }
+
+    .mtt {
+        margin-top: 15px;
+    }
+
+    .pyy {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .fsz {
@@ -96,7 +127,7 @@
     }
 
     .background-image {
-        background-color: #0d80b6;
+        background-color: white;
         /* background-image: url('https://images.squarespace-cdn.com/content/v1/621d132ccfbe47162ece3f00/b2a2ccdb-4c1a-4010-8a2e-c001d78da870/desktop_wCircle.png');*/
         background-size: cover;
         background-position: center;
@@ -120,6 +151,16 @@
 }
 
 @media (min-width:768px) and (max-width:1200px) {
+
+    .mtt {
+        margin-top: 5px;
+    }
+
+    .pyy {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+
     .fsz {
         font-size: 25px;
     }
@@ -143,6 +184,14 @@
 }
 
 @media (max-width: 768px) and (min-width:576px) {
+    .mtt {
+        margin-top: 5px;
+    }
+
+    .pyy {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
 
     .size {
         height: 50px;
@@ -170,6 +219,15 @@
 
     .pxx {
         padding: 30px;
+    }
+
+    .mtt {
+        margin-top: 10px;
+    }
+
+    .pyy {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
     }
 
     .p {
@@ -205,16 +263,16 @@
         background-image: url('https://images.squarespace-cdn.com/content/v1/621d132ccfbe47162ece3f00/49e6aa62-8d85-44d0-8b3a-d59324e8dfe9/Mobile_FAQ_Shape.png');
         background-size: cover;
         background-position: center;
-        width: 100vw;
-        height: 750px;
+        width: 100%;
+        height: auto;
     }
 
     .backg-image-mob {
         /* background-image: url('https://images.squarespace-cdn.com/content/v1/621d132ccfbe47162ece3f00/75c33e12-345f-4bb7-b6b7-2e20e3994cf3/Mobile_FAQ_Desktop.png');*/
         background-size: cover;
         background-position: center;
-        width: 100vw;
-        height: 400px;
+        width: 100%;
+        height: 100%;
     }
 
     .position {
@@ -234,5 +292,29 @@
 
     .fsz {
         font-size: 40px;
+    }
+}
+
+@media(max-width:576px) {
+    .mtt {
+        margin-top: 18px;
+    }
+
+    .pyy {
+        padding-top: 0.3rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    .size {
+        height: 40px;
+    }
+
+    .pxx {
+        padding: 25px;
+    }
+
+    .whl {
+        width: 150px;
+        height: 150px;
     }
 }
