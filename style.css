@@ -46,12 +46,18 @@
 
 
 @media (min-width: 1200px) {
+    .w-80{
+        width: 80%;
+    }
+
+    .ml-100 {
+        margin-left: 100px;
+    }
 
     .mt-web {
         margin-top: 60px;
 
     }
-
 
     .w-70 {
         width: 90%;
@@ -151,6 +157,9 @@
 }
 
 @media (min-width:768px) and (max-width:1200px) {
+    .web-none {
+        display: none;
+    }
 
     .mtt {
         margin-top: 5px;
@@ -179,11 +188,17 @@
     }
 
     .mr {
-        margin-right: -90px;
+        margin-right: 0px;
     }
 }
 
 @media (max-width: 768px) and (min-width:576px) {
+
+    .p2 {
+        padding: 10px;
+
+    }
+    
     .mtt {
         margin-top: 5px;
     }
