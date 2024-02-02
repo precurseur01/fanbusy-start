@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start.fanbusy</title>
@@ -22,26 +23,37 @@
                         <div style="margin-left: -10px;">
                             <img src="image/logo3.0.png" alt="Full fanbusy Logo" class="img-fluid m-t size ">
                         </div>
-
+                        <div class="dropdown position-absolute end-0 m-none  mt-4">
+                            <button
+                                class="btn btn-transparent dropdown-toggle border border-0 mb-2 me-5 text-white fs-6 language"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                language
+                            </button>
+                            <ul class="dropdown-menu rounded-4 langs" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item active translate en" href="#" language="english">English</a>
+                                </li>
+                                <li><a class="dropdown-item translate fr" href="#" language="french">French</a></li>
+                            </ul>
+                        </div>
                         <div class=" custom-mr mtt">
                             <a href="https://Fanbusy.com/auth/login"
-                                class="btn bg-color border border-color rounded-pill pxx pyy fw-bold text-white border-2">Log
-                                in</a>
+                                class="btn bg-color border border-color rounded-pill pxx pyy fw-bold text-white border-2 fs-5 logIn">Log in</a>
                         </div>
                     </div>
+                    
                     <div class="row">
                         <div class=" col-md-6 mb-5 ">
                             <div class=" text-white mt-5">
-                                <p class="mt-5  fsz fw-bold ">Use your content as a cash machine!</p>
-                                <p class="my-5 fs-5 w-80" >Create exclusive content and mone2ze it your way! You don't have to be a celebrity.</p>
+                                <p id="t1" class="mt-5 fsz fw-bold t1 ">Use your content as a cash machine!</p>
+                                <p id="t2" class="my-5 fs-5 w-80 t2">Create exclusive content and monetize it your way! You don't have to be a celebrity.</p>
                                 <a href="https://Fanbusy.com/auth/create"
-                                    class="text-decoration-none rounded-pill pxx py-3 mt-5  btn-color ">Sign Up</a>
+                                    class="text-decoration-none rounded-pill pxx py-3 mt-5  btn-color singUp">Sign Up</a>
                             </div>
                         </div>
-                        <div class="col-md-6 mt-5">
+                        <div class="col-md-6 mt-5 pr ">
                             <div>
-                                <img src="image/mobile.png"
-                                    alt="Mobile device with an Fanbusy feed seen on screen" class="img-fluid">
+                                <img src="image/mobile.png" alt="Mobile device with an Fanbusy feed seen on screen"
+                                    class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -54,16 +66,14 @@
                                 style="max-width: 120px;max-height:120px;">
                         </div>
                         <div class="text-white mt-4 ">
-                            <h2 class="fs-1">What is Fanbusy?</h2>
-                            <p class="fs-5 mt-4 mb-5 w-70">FanBusy is a platform where content creators can monetize
-                                their craft through subscriptions and pay-per-view models.</p>
+                            <h2 class="fs-1 whatIs">What is Fanbusy?</h2>
+                            <p class="fs-5 mt-4 mb-5 w-70 fanbusyIs">FanBusy is a platform where content creators can monetize their craft through subscriptions and pay-per-view models.</p>
                         </div>
-                        <a href="https://" class="btn-color  rounded-pill pxx py-3 text-decoration-none">Sign Up</a>
+                        <a href="https://" class="btn-color  rounded-pill pxx py-3 text-decoration-none singUp ">Sign Up</a>
                     </div>
                     <div class="col-md-6 mt-5 order-md-1 ms-0 w-40">
                         <div>
-                            <img class="img-fluid"
-                                src="image/mobileL.gif"
+                            <img class="img-fluid" src="image/mobileL.gif"
                                 alt="Tablet with an Fanbusy feed being scrolled through and posts being liked, commented on, and voted on">
                         </div>
                     </div>
@@ -79,11 +89,9 @@
                     <img src="https://images.squarespace-cdn.com/content/v1/621d132ccfbe47162ece3f00/2c78e54a-a8df-4a13-9618-e4a62b93aa32/lightbulb_x2.png"
                         class="card-img-top ms-2 " alt="Blue Lightbulb icon" style="max-width: 50px;max-height:50px;">
                     <div class="card-body ">
-                        <p class="card-title fs-1 mb-5 fw-bold" style="color: #242529">FanBusy created a platform based
-                            on a new set of key values.</p>
+                        <p class="card-title fs-1 mb-5 fw-bold fanbusyCreated" style="color: #242529">FanBusy created a platform based on a new set of key values.</p>
                     </div>
-                    <a href="https://" class="bg-color  rounded-pill pxx py-3 text-decoration-none text-white ms-3">Sign
-                        Up</a>
+                    <a href="https://" class="bg-color  rounded-pill pxx py-3 text-decoration-none text-white ms-3 singUp">Sign Up</a>
                 </div>
             </div>
             <div class="col-md-6 h-100 mt-web">
@@ -95,47 +103,41 @@
                                     class=" w-100 accordion-item__click-targpxet btn btn-link d-flex justify-content-between text-decoration-none width fs-5 color "
                                     type="button" data-toggle="collapse" data-target="#collapseContent"
                                     aria-expanded="false">
-                                    <span class="accordion-item__title">
+                                    <span class="accordion-item__title creativeOwnership">
                                         Creative Ownership
                                     </span>
                                     <span class="text-decoration-none " id="collapseIcon0">+</span>
                                 </div>
                                 <div id="collapseContent0" class="collapse pr ">
-                                    <p class="text-muted fs size-content">FanBusy creators own 100% of their content,
-                                        and keep 75% of all earnings.</p>
+                                    <p class="text-muted fs size-content fanbusyCreators">FanBusy creators own 100% of their content,and keep 75% of all earnings.</p>
                                 </div>
                             </div>
                             <div id="btn1" class="border-bottom">
                                 <div class=" w-100 accordion-item__click-target btn btn-link d-flex justify-content-between text-decoration-none width fs-5 color border-bottom"
                                     type="button" data-toggle="collapse" data-target="#collapseContent0"
                                     aria-expanded="false">
-                                    <span class="accordion-item__title ">
+                                    <span class="accordion-item__title inclusivity">
                                         Inclusivity
                                     </span>
                                     <span id="collapseIcon1">+</span>
                                 </div>
 
                                 <div id="collapseContent1" class="collapse pr ">
-                                    <p class="text-muted fs size-content flex-wrap">All creators and their fans (18+)
-                                        deserve a safe and inclusive platform to connect and share.</p>
+                                    <p class="text-muted fs size-content flex-wrap allCreators">All creators and their fans (18+) deserve a safe and inclusive platform to connect and share.</p>
                                 </div>
                             </div>
                             <div id="btn2" class="border-bottom">
                                 <div class=" w-100 accordion-item__click-target btn btn-link d-flex justify-content-between text-decoration-none width fs-5  color border-bottom"
                                     type="button" data-toggle="collapse" data-target="#collapseContent1"
                                     aria-expanded="false">
-                                    <span class="accordion-item__title ">
+                                    <span class="accordion-item__title freedom">
                                         Freedom
                                     </span>
                                     <span id="collapseIcon2">+</span>
                                 </div>
 
                                 <div id="collapseContent2" class="collapse pr w-100">
-                                    <p class="text-muted fs flex-wrap size-content w-100">FanBusy creators are free to
-                                        express their most authentic selves through their content.
-                                        Our platform is proof that online safety, freedom of expression and
-                                        entrepreneurship are a
-                                        winning cocktail for crea2ve success.</p>
+                                    <p class="text-muted fs flex-wrap size-content w-100 fanbusyCreatorsAreFree">FanBusy creators are free to express their most authentic selves through their content.Our platform is proof that online safety, freedom of expression and entrepreneurship are a winning cocktail for crea2ve success.</p>
                                 </div>
                             </div>
 
@@ -143,14 +145,14 @@
                                 <div class=" w-100 accordion-item__click-target btn btn-link d-flex justify-content-between text-decoration-none width fs-5 color border-bottom"
                                     type="button" data-toggle="collapse" data-target="#collapseContent2"
                                     aria-expanded="false">
-                                    <span class="accordion-item__title ">
+                                    <span class="accordion-item__title safety">
                                         Safety
                                     </span>
                                     <span id="collapseIcon3">+</span>
                                 </div>
 
                                 <div id="collapseContent3" class="collapse pr">
-                                    <p class="text-muted fs flex-wrap size-content">FanBusy strives to be the safest
+                                    <p class="text-muted fs flex-wrap size-content fanbusyStrives">FanBusy strives to be the safest
                                         online platform. We use the most advanced internal controls in the industry, and
                                         we will never monetize or sell your data.</p>
                                 </div>
@@ -164,17 +166,17 @@
 
     <div class=" bg-info mt-5 py-5">
         <div class="ml mlmd py-4">
-            <div class="row">
+            <div class="d-flex flex-wrap">
                 <div class="mb-5 custom-width  pt-3">
                     <div>
                         <img src="image/img2.png" class="card-img-top ms-2 " alt="Blue Lightbulb icon"
                             style="max-width: 70px;max-height:70px;">
                         <div class="card-body ">
-                            <p class="card-title fs-1 mb-5 fw-bold text-white" style="color: #242529">How to get started
+                            <p class="card-title fs-1 mb-5 fw-bold text-white howToGetStarted" style="color: #242529">How to get started
                             </p>
                         </div>
                         <a href="https://"
-                            class="bg-color  rounded-pill pxx py-3 text-decoration-none text-white ms-3">Sign Up</a>
+                            class="bg-color  rounded-pill pxx py-3 text-decoration-none text-white ms-3 singUp">Sign Up</a>
                     </div>
                 </div>
                 <div class="col-md-6 mt-5 ">
@@ -190,9 +192,9 @@
                                                     <span
                                                         class="text-primary rounded-circle bg-white px-3 py-2">1</span>
                                                 </div>
-                                                <p class="text-white fs-3 ms-3">Create an account</p>
+                                                <p class="text-white fs-3 ms-3 createAccount">Create an account</p>
                                             </div>
-                                            <p class="p2 text-white ">To begin sharing your content on Fanbusy, you'll
+                                            <p class="p2 text-white toBegin">To begin sharing your content on Fanbusy, you'll
                                                 need to create an account. It's free to sign up, and takes only a few
                                                 moments</p>
                                         </div>
@@ -208,15 +210,9 @@
                                                     <span
                                                         class="text-primary rounded-circle bg-white px-3 py-2">2</span>
                                                 </div>
-                                                <p class="text-white fs-3 ms-3">Set up your subscription rate</p>
+                                                <p class="text-white fs-3 ms-3 setUp">Set up your subscription rate</p>
                                             </div>
-                                            <p class="p2 text-white"> It's up to you whether your account should be free
-                                                or paid.
-                                                Although free accounts allow fans to access your content without paying
-                                                for a
-                                                subscription, there are still many ways to make money. Features like
-                                                pay-per-view
-                                                messages, posts, and streams are available to free accounts. </p>
+                                            <p class="p2 text-white itIsUp"> It's up to you whether your account should be free or paid.Although free accounts allow fans to access your content without paying for a subscription, there are still many ways to make money. Features like pay-per-view messages, posts, and streams are available to free accounts. </p>
                                         </div>
                                     </nav>
                                 </div>
@@ -230,11 +226,10 @@
                                                     <span
                                                         class="text-primary rounded-circle bg-white px-3 py-2">3</span>
                                                 </div>
-                                                <p class="text-white fs-3 ms-3">Create content & promote your FanBusy
+                                                <p class="text-white fs-3 ms-3 createContent">Create content & promote your FanBusy
                                                 </p>
                                             </div>
-                                            <p class="p2 text-white"> Once you’ve started sharing content, let your
-                                                followers on other social platforms know about your FanBusy profile!
+                                            <p class="p2 text-white once"> Once you’ve started sharing content, let your followers on other social platforms know about your FanBusy profile!
                                             </p>
                                         </div>
                                     </nav>
@@ -274,13 +269,13 @@
                                 class="accordion-item__click-targpxet btn btn-link d-flex justify-content-between text-decoration-none  fs-5 color "
                                 type="button" data-toggle="collapse" data-target="#collapseContent"
                                 aria-expanded="false">
-                                <span class="accordion-item__title ">
+                                <span class="accordion-item__title question1">
                                     How can I initiate earnings on FanBusy?
                                 </span>
                                 <span class="text-decoration-none" id="collapseIcon4">+</span>
                             </div>
                             <div id="collapseContent4" class="collapse pr ">
-                                <p class="text-muted fs size-content">Upon establishing a FanBusy account, the next step
+                                <p class="text-muted fs size-content response1">Upon establishing a FanBusy account, the next step
                                     involves submitting your
                                     identification and banking details for a thorough review. Once your identity has
                                     been
@@ -292,14 +287,14 @@
                             <div class="accordion-item__click-target btn btn-link d-flex justify-content-between text-decoration-none  fs-5 color border-bottom"
                                 type="button" data-toggle="collapse" data-target="#collapseContent0"
                                 aria-expanded="false">
-                                <span class="accordion-item__title ">
+                                <span class="accordion-item__title question2">
                                     In what ways can I utilize FanBusy as a content creator?
                                 </span>
                                 <span id="collapseIcon5">+</span>
                             </div>
 
                             <div id="collapseContent5" class="collapse pr ">
-                                <p class="text-muted fs size-content flex-wrap">FanBusy offers a plethora of features
+                                <p class="text-muted fs size-content flex-wrap response2">FanBusy offers a plethora of features
                                     designed to empower you as a content creator.
                                     These include the ability to generate and share content, monetize your creative
                                     work,
@@ -313,14 +308,14 @@
                             <div class="accordion-item__click-target btn btn-link d-flex justify-content-between text-decoration-none  fs-5  color border-bottom"
                                 type="button" data-toggle="collapse" data-target="#collapseContent1"
                                 aria-expanded="false">
-                                <span class="accordion-item__title ">
+                                <span class="accordion-item__title question3 ">
                                     What strategies can I employ to generate income on FanBusy?
                                 </span>
                                 <span id="collapseIcon6">+</span>
                             </div>
 
                             <div id="collapseContent6" class="collapse pr">
-                                <p class="text-muted fs flex-wrap size-content">While paid subscriptions serve as one
+                                <p class="text-muted fs flex-wrap size-content response3">While paid subscriptions serve as one
                                     avenue for monetizing your content on FanBusy,
                                     there are various other approaches to explore. These include offering pay-per-view
                                     messages, posts, and streams, as well as receiving tips from your subscribers.
@@ -340,8 +335,8 @@
                             src="image/interogation.png" alt="White question mark icon" loading="lazy">
                     </div>
                     <div>
-                        <span class="fs-1 fw-bold color mt-0 ms-5 ">Frequently Asked <br><span
-                                class="ms-5">Questions</span></span>
+                        <span class="fs-1 fw-bold color mt-0  frequentlyAsked">Frequently Asked <br>
+                                Questions</span>
                     </div>
                 </div>
             </div>
@@ -360,7 +355,7 @@
                             alt="White question mark icon" loading="lazy">
                     </div>
                     <div>
-                        <span class="fs-1 fw-bold text-white mt-5 ">Frequently Asked <br> Questions</span>
+                        <span class="fs-1 fw-bold text-white mt-5 frequentlyAsked" style="width: 10px">Frequently Asked <br> Questions</span>
                     </div>
                 </div>
             </div>
@@ -368,37 +363,38 @@
             <div class="col-md-6 h-auto">
                 <div class=" backg-image-mob pt-5 pb-2 bg-white text-decoration-none rounded-4 h-auto ">
                     <div class="h-auto">
-                      
+
                         <div class="border-bottom">
                             <div id="btn7"
                                 class=" w-100 accordion-item__click-targpxet btn btn-link d-flex justify-content-between text-decoration-none width fs-5 color "
                                 type="button" data-toggle="collapse" data-target="#collapseContent"
                                 aria-expanded="false">
-                                <span class="accordion-item__title">
+                                <span class="accordion-item__title question1">
                                     How can I initiate earnings on FanBusy?
                                 </span>
                                 <span class="text-decoration-none " id="collapseIcon7">+</span>
                             </div>
                             <div id="collapseContent7" class="collapse pr ">
-                                <p class="text-muted fs size-content">Upon establishing a FanBusy account, the next step
+                                <p class="text-muted fs size-content response1">Upon establishing a FanBusy account, the next step
                                     involves submitting your
                                     identification and banking details for a thorough review. Once your identity has
                                     been
-                                    authenticated, you can commence crafting paid content and promoting your profile.</p>
+                                    authenticated, you can commence crafting paid content and promoting your profile.
+                                </p>
                             </div>
                         </div>
                         <div id="btn8" class="border-bottom">
                             <div class=" w-100 accordion-item__click-target btn btn-link d-flex justify-content-between text-decoration-none width fs-5 color border-bottom"
                                 type="button" data-toggle="collapse" data-target="#collapseContent0"
                                 aria-expanded="false">
-                                <span class="accordion-item__title ">
+                                <span class="accordion-item__title question2 ">
                                     In what ways can I utilize FanBusy as a content creator?
                                 </span>
                                 <span id="collapseIcon8">+</span>
                             </div>
 
                             <div id="collapseContent8" class="collapse pr ">
-                                <p class="text-muted fs size-content flex-wrap">FanBusy offers a plethora of features
+                                <p class="text-muted fs size-content flex-wrap response2">FanBusy offers a plethora of features
                                     designed to empower you as a content creator.
                                     These include the ability to generate and share content, monetize your creative
                                     work,
@@ -411,14 +407,15 @@
                             <div class=" w-100 accordion-item__click-target btn btn-link d-flex justify-content-between text-decoration-none width fs-5  color border-bottom"
                                 type="button" data-toggle="collapse" data-target="#collapseContent1"
                                 aria-expanded="false">
-                                <span class="accordion-item__title ">
+                                <span class="accordion-item__title question3">
                                     What strategies can I employ to generate income on FanBusy?
                                 </span>
                                 <span id="collapseIcon9">+</span>
                             </div>
 
                             <div id="collapseContent9" class="collapse pr w-100">
-                                <p class="text-muted fs flex-wrap size-content w-100">While paid subscriptions serve as one
+                                <p class="text-muted fs flex-wrap size-content w-100 response3">While paid subscriptions serve as
+                                    one
                                     avenue for monetizing your content on FanBusy,
                                     there are various other approaches to explore. These include offering pay-per-view
                                     messages, posts, and streams, as well as receiving tips from your subscribers.
@@ -427,7 +424,7 @@
                                     directly through your FanBusy profile.</p>
                             </div>
                         </div>
-                          
+
                     </div>
                 </div>
             </div>
@@ -481,32 +478,45 @@
 
     <div class="bg-color  p-3">
         <div class="mlmd ml footer">
+            <div class="dropdown position-absolute end-0 web-none ">
+                <button
+                    class="btn btn-transparent dropdown-toggle border border-0 text-white language "
+                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    language
+                </button>
+                <ul class="dropdown-menu rounded-4 langs" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item active en translate" href="javascript:void(0)" language="english">english</a></li>
+                    <li><a class="dropdown-item fr translate" href="javascript:void(0)" language="french">french</a></li>
+                </ul>
+            </div>
             <div class="py-3">
                 <div class="row justify-content-between ">
-                    <div class="col-md-6">
-                        <div style="margin-left: -15px;">
+                    <div class="col-md-6 row">
+                        <div style="margin-left: -15px;margin-top: -20px;">
                             <img src="image/logo3.0.png" alt="Full fanbusy Logo"
                                 class="img-fluid position-absolute size">
 
                         </div>
                     </div>
                     <div class="col-md-6 m-top">
-                        <div class=" me-5">
+                        <div class="me-5 d-flex">
                             <a href="https://Fanbusy.com/auth/login"
-                                class="btn btn-bg-color border border-white rounded-pill  mb-5  text-white  pxx pyy ">Log
-                                in</a>
+                                class="btn btn-bg-color border border-white rounded-pill  mb-5  text-white  pxx pyy logIn">Log in</a>
                             <a href="https://Fanbusy.com/auth/create"
-                                class="btn btn-color border border-0 rounded-pill  mb-5 text-primary pxx pyy ms-2 ">Sign
-                                up</a>
+                                class="btn btn-color border border-0 rounded-pill  mb-5 text-primary pxx pyy ms-2 singUp">Sign up</a>
+                        
                         </div>
+
                     </div>
+
                 </div>
-                <p class="text-white w-100">© Copyright 2023. All Rights Reserved</p>
+                <p class="text-white w-100 copyright">© Copyright 2024. All Rights Reserved</p>
                 <div class="dflex">
                     <div class="">
                         <div class=" d-flex w text-white ">
-                            <a href="https://Fanbusy.com/privacy" class="text-white me-3 "> Privacy</a>
-                            <a href="https://Fanbusy.com/terms-of-service" class="text-white ml">Terms of Service</a>
+                            <a href="https://Fanbusy.com/privacy" class="text-white me-3 privacy "> Privacy</a>
+                            <a href="https://Fanbusy.com/terms-of-service" class="text-white ml termsOfService">Terms of Service</a>
 
                         </div>
                     </div>
@@ -515,6 +525,7 @@
                         <!-- <a href="lien-3" class="text-white ms-3 whl "><img src="image/logo.png" alt="logo"></a> -->
                         <a href="" class="text-white  fs-2"><i class="fab fa-facebook"></i></a>
                         <a href="" class="text-white  fs-2 ms-2"><i class="fab fa-instagram "></i></a>
+
                     </div>
                 </div>
 

@@ -2,6 +2,11 @@
     background-color: #00AEEF;
 }
 
+
+.dropdown-menu{
+
+    min-width: 7rem;
+}
 .bgSection {
     background-image: url('image/bg.section.png');
     background-size: cover;
@@ -46,6 +51,11 @@
 
 
 @media (min-width: 1200px) {
+
+    .pr{
+        padding-left: 90px;
+    }
+
     .w-80{
         width: 80%;
     }
