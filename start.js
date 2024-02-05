@@ -53,7 +53,7 @@ $(document).ready(function () {
             response1: "Upon establishing a FanBusy account, the next step involves submitting your identification and banking details for a thorough review. Once your identity has been authenticated, you can commence crafting paid content and promoting your profile.",
             question2: " In what ways can I utilize FanBusy as a content creator?",
             response2: "FanBusy offers a plethora of features designed to empower you as a content creator.These include the ability to generate and share content, monetize your creative work,interact with your subscribers, and monitor your overall success. Explore tools such as paid messaging and more to maintain active engagement with your fan base.",
-            question3: " What strategies can I employ to generate income on FanBusy?",
+            question3: "What strategies can I employ to generate income on FanBusy ?",
             response3: "While paid subscriptions serve as one avenue for monetizing your content on FanBusy,there are various other approaches to explore. These include offering pay-per-view messages, posts, and streams, as well as receiving tips from your subscribers.Additionally, you have the option to conduct fundraising initiatives for charitable causes directly through your FanBusy profile.",
             frequentlyAsked: "Frequently Asked Questions",
             privacy: "Privacy",
@@ -133,6 +133,8 @@ $(document).ready(function () {
         response1 = $(".response1"),
         question2 = $(".question2"),
         response2 = $(".response2"),
+        question3 = $(".question3"),
+        response3 = $(".response3"),
         frequentlyAsked = $(".frequentlyAsked"),
         privacy = $(".privacy"),
         termsOfService = $(".termsOfService"),
@@ -174,6 +176,8 @@ $(document).ready(function () {
         response1.text(data[attr].response1);
         question2.text(data[attr].question2);
         response2.text(data[attr].response2);
+        question3.text(data[attr].question3);
+        response3.text(data[attr].response3);
         frequentlyAsked.text(data[attr].frequentlyAsked);
         privacy.text(data[attr].privacy);
         termsOfService.text(data[attr].termsOfService);

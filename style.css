@@ -3,10 +3,11 @@
 }
 
 
-.dropdown-menu{
+.dropdown-menu {
 
     min-width: 7rem;
 }
+
 .bgSection {
     background-image: url('image/bg.section.png');
     background-size: cover;
@@ -51,12 +52,16 @@
 
 
 @media (min-width: 1200px) {
+    .mT-3 {
+        padding-top: 10px;
+        
+    }
 
-    .pr{
+    .pr-img {
         padding-left: 90px;
     }
 
-    .w-80{
+    .w-80 {
         width: 80%;
     }
 
@@ -208,7 +213,7 @@
         padding: 10px;
 
     }
-    
+
     .mtt {
         margin-top: 5px;
     }
