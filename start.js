@@ -58,7 +58,7 @@ $(document).ready(function () {
             frequentlyAsked: "Frequently Asked Questions",
             privacy: "Privacy",
             termsOfService: "Terms of Service",
-            copyRight: "© Copyright 2023. All Rights Reserved",
+            copyRight: "© Copyright 2024. All Rights Reserved",
             createContent: "Create content & promote your FanBusy"
 
         },
@@ -98,7 +98,7 @@ $(document).ready(function () {
             frequentlyAsked: "Questions fréquemment posées",
             privacy: "Privée",
             termsOfService: "Conditions d'utilisation",
-            copyRight: "© Copyright 2023. Tous droits réservés",
+            copyRight: "© Copyright 2024. Tous droits réservés",
             createContent: "Créer du contenu et promouvoir votre compte"
         }
     }
@@ -142,15 +142,16 @@ $(document).ready(function () {
         createContent = $(".createContent")
 
 
-
-
-    link.on('click', function () {
+    function changeLanguageAndURL(attr) {
+        const url = new URL(window.location.href);
+        url.searchParams.set('lang', attr);
+        history.replaceState(null, null, url.toString());
         langs.find('.active').removeClass("active");
-        $(this).addClass("active");
-        let attr = $(this).attr("language");
+        $(`.translate[language="${attr}"]`).addClass("active");
         t1.text(data[attr].t1);
         t2.text(data[attr].t2);
         en.text(data[attr].en);
+        fr.text(data[attr].fr);
         itIsUp.text(data[attr].itIsUp);
         language.text(data[attr].language);
         logIn.text(data[attr].logIn);
@@ -183,5 +184,23 @@ $(document).ready(function () {
         termsOfService.text(data[attr].termsOfService);
         copyRight.text(data[attr].copyRight);
         createContent.text(data[attr].createContent);
+
+
+    }
+
+    link.on('click', function () {
+        const lang = $(this).attr("language");
+        changeLanguageAndURL(lang);
+
     });
+
+    function getLangFromURL() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get('lang') || 'en';
+    }
+
+    const initialLang = getLangFromURL();
+    if (initialLang) {
+        changeLanguageAndURL(initialLang);
+    }
 });
