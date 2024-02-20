@@ -150,7 +150,7 @@ $(document).ready(function () {
 
 
     function changeImage(lang) {
-        if (lang === 'english') {
+        if (lang === 'english' || lang === 'en') {
             imgEn.show();
             imgFr.hide();
             imgEn1.show();
