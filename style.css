@@ -53,6 +53,15 @@
 
 
 @media (min-width: 1200px) {
+    
+    .custom-siz-web {
+        width: 80%;
+    }
+
+    .custom-size-web {
+        width: 60%;
+    }
+
     .w-55 {
         width: 55%;
     }

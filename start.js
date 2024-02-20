@@ -1,4 +1,10 @@
 $(document).ready(function () {
+
+    const imgEn = $('#imgEn');
+    const imgFr = $('#imgFr');
+    const imgEn1 = $('#imgEn1');
+    const imgFr1 = $('#imgFr1');
+
     for (let i = 0; i < 12; i++) {
         const btn = $(`#btn${i}`);
         const content = $(`#collapseContent${i}`);
@@ -142,6 +148,22 @@ $(document).ready(function () {
         createContent = $(".createContent")
 
 
+
+    function changeImage(lang) {
+        if (lang === 'english') {
+            imgEn.show();
+            imgFr.hide();
+            imgEn1.show();
+            imgFr1.hide();
+        } else {
+            imgEn.hide();
+            imgFr.show();
+            imgEn1.hide();
+            imgFr1.show();
+        }
+
+    }
+
     function changeLanguageAndURL(attr) {
         const url = new URL(window.location.href);
         url.searchParams.set('lang', attr);
@@ -184,13 +206,12 @@ $(document).ready(function () {
         termsOfService.text(data[attr].termsOfService);
         copyRight.text(data[attr].copyRight);
         createContent.text(data[attr].createContent);
-
-
     }
 
     link.on('click', function () {
         const lang = $(this).attr("language");
         changeLanguageAndURL(lang);
+        changeImage(lang)
 
     });
 
@@ -202,5 +223,6 @@ $(document).ready(function () {
     const initialLang = getLangFromURL();
     if (initialLang) {
         changeLanguageAndURL(initialLang);
+        changeImage(initialLang)
     }
 });
