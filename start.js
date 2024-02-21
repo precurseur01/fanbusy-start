@@ -150,7 +150,7 @@ $(document).ready(function () {
 
 
     function changeImage(lang) {
-        if (lang === 'english' || lang === 'en') {
+        if (lang === 'english') {
             imgEn.show();
             imgFr.hide();
             imgEn1.show();
@@ -220,7 +220,8 @@ $(document).ready(function () {
         return urlParams.get('lang') || 'en';
     }
 
-    const initialLang = getLangFromURL();
+    const initialLang = getLangFromURL() === 'en' ? 'english' : 'french';
+
     if (initialLang) {
         changeLanguageAndURL(initialLang);
         changeImage(initialLang)
